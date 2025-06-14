@@ -25,18 +25,39 @@ Takes the weather information for the parameters combination.
 
 Install and setup Docker following the steps for your OS. Download and setup found here: https://docs.docker.com/desktop/
 
-Clone the git project found here: URL.
+Clone the git project found here: https://github.com/anaurynorran/wheather-forecast-api..
 
 ```bash
-  git clone <repository-url>
+  git clone https://github.com/anaurynorran/wheather-forecast-api.git
 ```
 
-## How to run the application
+## How to run the application outside of Docker
 
 Go to the diretory that you've cloned the project.
 
 ```bash
-  cd my-project
+  cd wheather-forecast-api
+```
+
+At terminal create a virtual environment and activate it.
+
+```bash
+  python3 venv .venv
+  source .venv/bin/activate
+```
+
+Run the following code, to start the server:
+
+```bash
+  uvicorn main:app
+```
+
+## How to run the application in Docker
+
+Go to the diretory that you've cloned the project.
+
+```bash
+  cd wheather-forecast-api
 ```
 At terminal create a virtual environment and activate it.
 
