@@ -31,8 +31,6 @@ Clone the git project found here: https://github.com/anaurynorran/wheather-forec
   git clone https://github.com/anaurynorran/wheather-forecast-api.git
 ```
 
-## How to run the application outside of Docker
-
 Go to the diretory that you've cloned the project.
 
 ```bash
@@ -42,9 +40,17 @@ Go to the diretory that you've cloned the project.
 At terminal create a virtual environment and activate it.
 
 ```bash
-  python3 venv .venv
+  python3 -m venv .venv
   source .venv/bin/activate
 ```
+
+Download the following packages
+
+```bash
+  pip3 install fastapi uvicorn selenium beautifulsoup lxml webdriver_manager
+```
+
+## How to run the application outside of Docker
 
 Run the following code, to start the server:
 
@@ -53,18 +59,6 @@ Run the following code, to start the server:
 ```
 
 ## How to run the application in Docker
-
-Go to the diretory that you've cloned the project.
-
-```bash
-  cd wheather-forecast-api
-```
-At terminal create a virtual environment and activate it.
-
-```bash
-  python3 venv .venv
-  source .venv/bin/activate
-```
 
 Execute the following command to build and run the application on Docker.
 
